@@ -4,16 +4,10 @@
   "nav": {
     "home": "Home",
     "about": "About",
-    "faq": "FAQ",
-    "course": "Course",
     "lessons": "Lezioni private"
   },
   "hero": {
     "title": ["Appunti di Chitarra"],
-    "links": {
-      "course": "Start Online Course",
-      "lessons": "Book Private Lessons"
-    },
     "cover": {
       "attribution": {
         "text": "&copy; Brett Sayles",
@@ -31,10 +25,10 @@
   },
   "course": {
     "lessons": {
-      "title": "Lessons",
+      "title": "Lezioni",
       "links": {
-        "prev": "Previous Lesson",
-        "next": "Next Lesson"
+        "prev": "Lezione precedente",
+        "next": "Lezione successiva"
       }
     }
   }

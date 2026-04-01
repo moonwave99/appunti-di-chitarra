@@ -72,10 +72,10 @@ function initFretboard(el) {
   const { chord, crop, showFretNumbers, fretLeftPadding, fretCount } =
     el.dataset;
 
-  new Fretboard({
+  const fretboard = new Fretboard({
     ...fretboardConfiguration,
     el,
-    width: 400,
+    width: chord ? 400 : 900,
     height: 300,
     bottomPadding: 0,
     scaleFrets: false,
@@ -88,9 +88,13 @@ function initFretboard(el) {
     fretLeftPadding: fretLeftPadding ? +fretLeftPadding : 0,
     crop,
     showFretNumbers: true,
-  })
-    .renderChord(chord)
-    .style({ fill: "#ff9505" });
+  });
+
+  if (chord) {
+    fretboard.renderChord(chord).style({ fill: "#ff9505" });
+  } else {
+    fretboard.render();
+  }
 }
 
 function initPiano(el) {
