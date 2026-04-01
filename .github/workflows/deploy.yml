@@ -8,7 +8,7 @@ on:
 
 env:
   MODE: prod
-  URL: https://moonwave99.github.io/musicknowledge.net
+  URL: https://moonwave99.github.io/appunti-di-chitarra
   VERSION: ${{ github.sha }}
 
 jobs:

@@ -26,4 +26,4 @@ Disallow: /
 User-agent: meta-externalagent
 Disallow: /
 
-Sitemap: https://musicknowledge.net/sitemap.xml
+Sitemap: https://moonwave99.github.io/appunti-di-chitarra/sitemap.xml

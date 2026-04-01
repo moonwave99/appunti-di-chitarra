@@ -1,7 +1,7 @@
-# Musicknowledge.net
+# Appunti di chitarra
 
-WIP
+Appunti di chitarra online.
 
 ## Staging
 
-http://moonwave99.github.io/musicknowledge.net
+https://moonwave99.github.io/appunti-di-chitarra
