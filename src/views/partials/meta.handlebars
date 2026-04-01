@@ -1,0 +1,10 @@
+<meta name="description" content="{{ description }}" />
+<meta property="og:site_name" content="{{labels.baseTitle}} | {{ labels.subtitle }}" />
+<meta property="og:url" content="{{getUrl slug}}" />
+<meta property="og:title" content="{{labels.baseTitle}} | {{title}}" />
+{{#if cover}}
+<meta property="og:image" content="~/src/assets/covers/{{cover.id}}.jpg?as=webp&width=600" />
+{{else}}
+<meta property="og:image" content="~/src/assets/hero.jpg?as=webp&width=600" />
+{{/if}}
+<meta property="og:description" content="{{ description }}" />

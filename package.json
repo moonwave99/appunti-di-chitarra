@@ -1,0 +1,48 @@
+{
+  "name": "appunti-di-chitarra",
+  "description": "Appunti di chitarra online",
+  "homepage": "https://moonwave99.github.io/appunti-di-chitarra",
+  "author": {
+    "name": "Diego Caponera",
+    "email": "diego.caponera@gmail.com",
+    "url": "https://github.com/moonwave99"
+  },
+  "version": "0.0.1",
+  "private": true,
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "staticFiles": {
+    "staticPath": "./src/static"
+  },
+  "scripts": {
+    "start": "NODE_ENV=dev pnpm concurrently 'pnpm dev:site' 'pnpm dev:client'",
+    "build": "pnpm run build:site && pnpm run build:client",
+    "dev:client": "parcel 'output/**/*.{html,xml}'",
+    "dev:site": "pnpm nodemon -e js,json,md,handlebars --watch data --watch src --watch ./",
+    "build:client": "parcel build 'output/**/*.{html,xml}' --public-url $URL",
+    "build:site": "node index.js",
+    "clean": "rm -rf dist output"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@moonwave99/goffre": "^0.1.5",
+    "@parcel/config-default": "^2.16.4",
+    "@parcel/packager-xml": "^2.16.3",
+    "@parcel/transformer-xml": "^2.16.3",
+    "concurrently": "^9.2.1",
+    "nodemon": "^3.1.11",
+    "parcel": "^2.16.3",
+    "parcel-reporter-static-files-copy": "^1.5.3",
+    "parcel-resolver-ignore": "^2.2.1",
+    "sharp": "^0.33.5"
+  },
+  "dependencies": {
+    "@moonwave99/fretboard.js": "^0.2.13",
+    "@moonwave99/paino": "^0.1.15",
+    "@tonaljs/midi": "^4.10.2",
+    "abcjs": "^6.6.1",
+    "ci": "^2.3.0",
+    "marked-footnote": "^1.4.0"
+  }
+}

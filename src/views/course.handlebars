@@ -1,0 +1,17 @@
+<section class="section {{id}}">
+  <div class="container">
+    <div class="content">
+      <section class="block">
+        {{#title}}
+        <h1>{{.}}</h1>
+        {{/title}}
+        {{{content}}}
+      </section>
+      <section class="block">
+        <h2>{{ labels.course.lessons.title }}</h2>
+        {{> course/list}}
+      </section>
+    </div>
+  </div>
+  </div>
+</section>

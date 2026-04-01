@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="{{language}}">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="generator" content="goffre">
+  {{#version}}
+  <meta name="version" content="{{ . }}">
+  {{/version}}
+  <title>{{labels.baseTitle}} | {{title}}</title>
+  {{#isHomepage}}
+  <link
+    fetchpriority="high"
+    href="~/src/assets/hero.jpg?as=webp&width=800&quality=100"
+    rel="preload" as="image"
+    data-for=".hero"/>
+  {{/isHomepage}}
+  {{#cover}}
+  <link
+    fetchpriority="high"
+    href="~/src/assets/covers/{{id}}.jpg?as=webp&width=768"
+    rel="preload" as="image"
+    data-for=".cover" />
+  {{/cover}}
+  <link rel="stylesheet" href="~/src/style.css" />
+  <link rel="sitemap" type="application/xml" href="{{ sitemapLink }}">
+  {{>meta}}
+</head>
+
+<body class="page-{{id}}">
+  {{>nav}}
+  <main>
+    {{{body}}}
+  </main>
+  {{>footer}}
+  <script type="module" src="~/src/index.js"></script>
+  {{#isCourse}}
+  <script type="module" src="~/src/course.js"></script>
+  {{/isCourse}}
+</body>
+
+</html>

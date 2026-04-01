@@ -1,0 +1,41 @@
+{
+  "baseTitle": "Appunti di Chitarra",
+  "subtitle": "Inizia oggi a suonare la chitarra",
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "faq": "FAQ",
+    "course": "Course",
+    "lessons": "Lezioni private"
+  },
+  "hero": {
+    "title": ["Appunti di Chitarra"],
+    "links": {
+      "course": "Start Online Course",
+      "lessons": "Book Private Lessons"
+    },
+    "cover": {
+      "attribution": {
+        "text": "&copy; Brett Sayles",
+        "link": "https://www.pexels.com/@brett-sayles/"
+      }
+    }
+  },
+  "footer": {
+    "top": "Back to top",
+    "license": "Except where otherwise noted, content on this site is licensed under a <a target='_blank' href='https://creativecommons.org/licenses/by-sa/4.0/deed.en'>Creative Commons Share Alike 4.0 License</a>."
+  },
+  "author": {
+    "name": "Diego Caponera",
+    "homepage": "https://diegocaponera.com"
+  },
+  "course": {
+    "lessons": {
+      "title": "Lessons",
+      "links": {
+        "prev": "Previous Lesson",
+        "next": "Next Lesson"
+      }
+    }
+  }
+}

@@ -1,0 +1,121 @@
+.hero {
+  --hero-font-size: 3rem;
+  min-height: 75vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  position: relative;
+  .hero-bg {
+    z-index: 0;
+    position: absolute;
+    inset: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 40vw 0;
+    background-image: url("~/src/assets/hero.jpg?as=webp&width=800&quality=100");
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    background-color: var(--accent-color);
+    .attribution {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      bottom: 1rem;
+      right: 1rem;
+      font-size: 0.8rem;
+      line-height: 1.5rem;
+      padding: 0 0.5rem;
+      border-radius: 0.25rem;
+      background-color: rgba(255, 255, 255, 0.5);
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  &::before {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -5rem;
+    background-color: var(--accent-color);
+    width: 55vw;
+    transform: skewx(-15deg);
+  }
+  &.loaded .hero-bg {
+    opacity: 1;
+  }
+  h1 {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: var(--hero-font-size);
+    line-height: calc(var(--hero-font-size) * 1.616);
+    span {
+      background-color: var(--accent-color);
+      width: max-content;
+    }
+    s {
+      opacity: 0.6;
+    }
+  }
+  .actions {
+    z-index: 1;
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .hero {
+    &::before {
+      width: 60vw;
+    }
+    .hero-bg {
+      background-size: cover;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    padding: 1rem;
+    &::before {
+      content: none;
+    }
+    h1 {
+      gap: 0.5rem;
+      font-size: 1.6rem;
+      line-height: 3.5rem;
+      margin-top: auto;
+      span {
+        width: max-content;
+        padding: 0 1rem;
+      }
+    }
+    .hero-bg {
+      background-position: center;
+      .attribution {
+        top: 1.25rem;
+        left: 1rem;
+        bottom: auto;
+        right: auto;
+        color: var(--color-light);
+        background-color: transparent;
+      }
+    }
+    .actions {
+      margin-top: auto;
+      flex-direction: column;
+      .action {
+        background-color: var(--accent-color);
+        color: var(--color-dark);
+      }
+    }
+  }
+}

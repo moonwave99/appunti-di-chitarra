@@ -1,0 +1,11 @@
+<button class="navToggler" aria-label="Toggle Navigation" type="button"></button>
+<nav class="nav">
+  <ul class="sections">
+    <li class="{{ getNavClass 'index' }}">
+      <a href="{{ getUrl '' }}">{{ labels.nav.home }}</a>
+    </li>
+    <li class="{{ getNavClass 'about' }}">
+      <a href="{{ getUrl 'about' }}">{{ labels.nav.about}}</a>
+    </li>
+  </ul>
+</nav>

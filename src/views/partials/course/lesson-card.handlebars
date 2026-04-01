@@ -1,0 +1,14 @@
+<a class="lesson-link action" href="{{getLink .}}">
+  <span>
+  {{#if prev }}
+    {{ @root.labels.course.lessons.links.prev }}
+  {{else}}
+    {{ @root.labels.course.lessons.links.next }}
+  {{/if}}
+  </span>
+  <img
+    loading="lazy" class="cover"
+    alt="{{cover.caption}}"
+    src="~/src/assets/covers/{{cover.id}}.jpg?as=webp&width=300"/>
+  <span>{{title}}</span>
+</a>

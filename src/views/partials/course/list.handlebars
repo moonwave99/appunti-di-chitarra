@@ -1,0 +1,7 @@
+<ol class="course-list">
+  {{#each lessons}}
+  <li>
+    <a href="{{ getParamLink '/course/:id' id=id }}">{{title}}</a>
+  </li>
+  {{/each}}
+</ol>

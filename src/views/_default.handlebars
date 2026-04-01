@@ -1,0 +1,19 @@
+<section class="section {{id}}">
+  <div class="container">
+    <div class="content">
+      {{#title}}
+      <h1>{{.}}</h1>
+      {{/title}}
+      {{#if blocks.length}}
+      {{#each blocks}}
+      <div class="block">
+        {{{ . }}}
+      </div>
+      {{/each}}
+      {{else}}
+      {{{ content }}}
+      {{/if}}
+    </div>
+    </div>
+  </div>
+</section>
