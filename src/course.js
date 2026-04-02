@@ -72,6 +72,13 @@ function initFretboard(el) {
   const { chord, crop, showFretNumbers, fretLeftPadding, fretCount } =
     el.dataset;
 
+  let text = {};
+  try {
+    text = JSON.parse(el.dataset.text);
+  } catch {
+    console.warn("Error parsing text");
+  }
+
   const fretboard = new Fretboard({
     ...fretboardConfiguration,
     el,
@@ -91,9 +98,15 @@ function initFretboard(el) {
   });
 
   if (chord) {
-    fretboard.renderChord(chord).style({ fill: "#ff9505" });
+    fretboard.renderChord(chord).style({
+      fill: "#ff9505",
+      fontSize: 18,
+      text: ({ fret, string }) => text[`${string}-${fret}`] || "",
+    });
   } else {
-    fretboard.render();
+    fretboard.render().style((x) => {
+      console.log(x);
+    });
   }
 }
 

@@ -7,7 +7,7 @@ title: I primi accordi
 date: 2026-04-02
 ---
 
-In questa lezione impareremo a suonare i nostri primi accordi con la chitarra.
+In questa lezione impareremo a suonare i nostri primi accordi con la chitarra. Mi raccomando se il vostro strumento non è accordato, [fatelo adesso](https://www.fender.com/online-guitar-tuner)!
 
 ## Un paio di cose da sapere prima di iniziare
 
@@ -19,6 +19,10 @@ La superficie attraversata dalle corde si chiama **tastiera della chitarra** ed 
 
 Ci si riferisce ai tasti con gli ordinali, cioè a partire dal numero uno. È probabile che sul bordo del manico della tastiera ci siano dei pallini in corrispondenza di specifici tasti, di solito 3-5-7-9-12. Questi sono riferimenti di cortesia per poter navigare la tastiera in maniera più comoda, senza doversi sporgere come dal finestrino di un treno per capire dove ci troviamo - abitudine questa pessima e da stroncare sul nascere!
 
+## Cosa sono gli accordi?
+
+Bella domanda! In musica molti termini assumono un significato differente a seconda del contesto. A livello teorico per accordo si intende **la consonanza di tre o più suoni**. Quando si suona musica popolare invece ci si riferisce spesso all'**accompagnamento ritmico** di un brano, pensate alla chitarra della _Canzone del sole_ di Battisti o al pianoforte di _Let it be_ dei Beatles.
+
 ## Il nostro primo accordo: Mi minore
 
 Ora che sappiamo come riferirci sia alle corde che ai tasti, possiamo seguire le seguenti istruzioni:
@@ -26,7 +30,7 @@ Ora che sappiamo come riferirci sia alle corde che ai tasti, possiamo seguire le
 - poggiamo il **dito medio** della mano sinistra sul **secondo tasto** della **quinta corda**;
 - poggiamo il **dito anulare** della mano sinistra sul **secondo tasto** della **quarta corda**.
 
-<figure data-fretboard data-name="Em" data-chord="022000"></figure>
+<figure data-fretboard data-name="Em" data-chord="022000" data-text='{"4-2":"A", "5-2":"M"}'></figure>
 
 Importante: evitiamo qualsiasi contatto con le altre corde, perché devono poter suonare liberamente.
 
@@ -34,11 +38,7 @@ Ora poggiate il pollice della mano destra sulla sesta corda, a ridosso del foro,
 
 Provate a suonare le corde come volete, mantenendo la posizione della mano sinistra: pizzicandole in ordine, saltandone alcune, oppure suonandole tutte con il plettro.
 
-### Cosa sono gli accordi?
-
-Bella domanda! In musica molti termini assumono un significato differente a seconda del contesto. A livello teorico per accordo si intende **la consonanza di tre o più suoni**. Quando si suona rock e pop invece ci si riferisce all'accompagnamento ritmico di un brano, pensate alla chitarra della _Canzone del sole_ di Battisti o al pianoforte di _Let it be_ dei Beatles.
-
-Presto impareremo che l'accordo di Mi minore si chiama così perché è costituito dalle note Mi, Sol e Si. Per adesso preoccupiamoci di produrre un suono pulito.
+Presto impareremo che l'accordo di Mi minore si chiama così perché è costituito dalle note Mi, Sol e Si, che costituiscono una **triade minore**. Per adesso preoccupiamoci di produrre un suono pulito.
 
 ### Ricapitolando il Mi minore
 
@@ -54,7 +54,7 @@ Oddio dobbiamo sospendere proprio sul più bello? Macché, poi vediamo perché s
 - **anulare**: terza corda, secondo tasto;
 - suoniamo a partire dalla **quinta corda**.
 
-<figure data-fretboard data-name="Asus2" data-chord="x02200"></figure>
+<figure data-fretboard data-name="Asus2" data-chord="x02200" data-text='{"3-2":"A", "4-2":"M"}'></figure>
 
 Rispetto al Mi minore, abbiamo spostato le due dita una corda più su. Suonate ora a partire dalla quinta corda come indicato: bravissimi!
 
