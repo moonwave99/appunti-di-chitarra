@@ -55,6 +55,11 @@
           }
         }
 
+        h3 {
+          margin-top: 3rem;
+          font-size: 1.5rem;
+        }
+
         p,
         ul,
         ol {
@@ -77,6 +82,32 @@
           box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
           p {
             font-size: 1rem;
+          }
+        }
+
+        table {
+          width: 100%;
+          padding: 0.5rem;
+          border-collapse: collapse;
+          thead {
+            tr {
+              line-height: 2rem;
+              th {
+                text-align: left;
+                font-size: 0.9rem;
+              }
+            }
+          }
+          tbody {
+            tr {
+              line-height: 2rem;
+              &:nth-child(odd) {
+                background-color: rgba(0, 0, 0, 0.1);
+              }
+              td {
+                padding: 0 0.5rem;
+              }
+            }
           }
         }
       }
