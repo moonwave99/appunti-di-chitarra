@@ -13,7 +13,7 @@ const url =
     : process.env.URL || pkg.homepage;
 
 const lessons = pages
-  .filter((x) => x.slug.startsWith("course/"))
+  .filter((x) => x.slug.startsWith("lezioni/"))
   .toSorted((a, b) => (a.index > b.index ? 1 : -1));
 
 await render({

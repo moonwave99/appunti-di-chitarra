@@ -2,7 +2,7 @@
 template: course/lesson
 index: 1
 id: primi-accordi
-slug: course/primi-accordi
+slug: lezioni/primi-accordi
 title: I primi accordi
 date: 2026-04-02
 ---
