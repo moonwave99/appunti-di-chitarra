@@ -97,9 +97,12 @@ function initFretboard(el) {
     showFretNumbers: true,
   });
 
+  console.log(chord);
+
   if (!chord) {
     return;
   }
+
   fretboard.renderChord(chord).style({
     fill: "#ff9505",
     fontSize: 18,

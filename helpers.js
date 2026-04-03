@@ -28,7 +28,7 @@ function isHomepage(context) {
 }
 
 function isCourse(context) {
-  if (!context.data.root.slug.startsWith("course")) {
+  if (!context.data.root.slug.startsWith("lezioni")) {
     return;
   }
   return context.fn(this);
