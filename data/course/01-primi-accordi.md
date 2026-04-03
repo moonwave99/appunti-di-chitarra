@@ -43,7 +43,7 @@ Ora che sappiamo come riferirci sia alle corde che ai tasti, possiamo seguire le
 - poggiamo il **dito medio** della mano sinistra sul **secondo tasto** della **quinta corda**;
 - poggiamo il **dito anulare** della mano sinistra sul **secondo tasto** della **quarta corda**.
 
-<figure data-fretboard data-name="Em" data-chord="022000" data-text='{"4-2":"A", "5-2":"M"}'></figure>
+<figure data-fretboard data-name="Em" data-chord="022000" data-text='{"4-2":"A", "5-2":"M"}' data-label="Mi minore"></figure>
 
 Nel diagramma sono segnati le iniziali delle dita in corrispondenza dei tasti da premere. Siamo liberi di utilizzare la diteggiatura che vogliamo a seconda del contesto, per ora seguiamo questa perché ci sarà utile nella prossima lezione.
 
@@ -76,7 +76,7 @@ Oddio dobbiamo sospendere proprio sul più bello? Macché, poi vediamo perché s
 - **anulare**: terza corda, secondo tasto;
 - suoniamo a partire dalla **quinta corda**, evitando la sesta.
 
-<figure data-fretboard data-name="Asus2" data-chord="x02200" data-text='{"3-2":"A", "4-2":"M"}'></figure>
+<figure data-fretboard data-name="Asus2" data-chord="x02200" data-text='{"3-2":"A", "4-2":"M"}' data-label="La sospeso"></figure>
 
 Rispetto al Mi minore, abbiamo spostato le due dita una corda più su. Suonate ora a partire dalla quinta corda come indicato: bravissimi!
 

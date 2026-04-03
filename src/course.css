@@ -161,8 +161,18 @@
     background-color: color-mix(in srgb, var(--accent-color), white 90%);
   }
 
-  &[data-fretboard] svg {
-    width: var(--chord-figure-width);
+  &[data-fretboard] {
+    gap: 0;
+    figcaption {
+      width: var(--chord-figure-width);
+      font-style: normal;
+      text-align: center;
+      font-family: var(--heading);
+      font-size: 1.2rem;
+    }
+    svg {
+      width: var(--chord-figure-width);
+    }
   }
 
   .paino .key.color-white.key-on.two,

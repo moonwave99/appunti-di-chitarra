@@ -69,7 +69,7 @@ function getFretCount(chord, fretLeftPadding = 0) {
 }
 
 function initFretboard(el) {
-  const { chord, crop, showFretNumbers, fretLeftPadding, fretCount } =
+  const { chord, crop, showFretNumbers, fretLeftPadding, fretCount, label } =
     el.dataset;
 
   let text = {};
@@ -97,17 +97,22 @@ function initFretboard(el) {
     showFretNumbers: true,
   });
 
-  if (chord) {
-    fretboard.renderChord(chord).style({
-      fill: "#ff9505",
-      fontSize: 18,
-      text: ({ fret, string }) => text[`${string}-${fret}`] || "",
-    });
-  } else {
-    fretboard.render().style((x) => {
-      console.log(x);
-    });
+  if (!chord) {
+    return;
   }
+  fretboard.renderChord(chord).style({
+    fill: "#ff9505",
+    fontSize: 18,
+    text: ({ fret, string }) => text[`${string}-${fret}`] || "",
+  });
+
+  if (!label) {
+    return;
+  }
+
+  const caption = document.createElement("figcaption");
+  caption.textContent = label;
+  el.appendChild(caption);
 }
 
 function initPiano(el) {
