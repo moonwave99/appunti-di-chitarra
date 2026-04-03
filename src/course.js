@@ -97,8 +97,6 @@ function initFretboard(el) {
     showFretNumbers: true,
   });
 
-  console.log(chord);
-
   if (!chord) {
     return;
   }
